@@ -1,0 +1,60 @@
+@import "./variables";
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  z-index: 999;
+  &__btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+    margin-left: 10px;
+  }
+}
+
+.setting-bar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  top: $toolbar-height;
+}
+
+.brush {
+  background: url("../assets/img/brush.svg") no-repeat center center;
+}
+.bsq {
+  background: url("../assets/img/black_square.svg") no-repeat center center;
+}
+.wcr {
+  background: url("../assets/img/white_circle.svg") no-repeat center center;
+}
+.erase {
+  background: url("../assets/img/erase.svg") no-repeat center center;
+}
+.bln {
+  background: url("../assets/img/black_line.svg") no-repeat center center;
+}
+
+.undo {
+  margin-left: auto;
+  background: url("../assets/img/undo.svg") no-repeat center center;
+}
+.redo {
+  background: url("../assets/img/redo.svg") no-repeat center center;
+}
+.save {
+  margin-right: 10px;
+  background: url("../assets/img/save.svg") no-repeat center center;
+}
